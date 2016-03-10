@@ -3,6 +3,7 @@ $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
 \usepackage{lmodern}
+
 $endif$
 $if(linestretch)$
 \usepackage{setspace}
@@ -92,6 +93,9 @@ $for(polyglossia-otherlangs)$
 $endfor$
 \fi
 $endif$
+% CSQUOTES
+\usepackage{csquotes}
+
 $if(natbib)$
 \usepackage{natbib}
 \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}

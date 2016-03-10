@@ -83,6 +83,9 @@ $for(polyglossia-otherlangs)$
 $endfor$
 \fi
 $endif$
+% GUILLEMETS
+\usepackage{csquotes}
+
 \newif\ifbibliography
 $if(natbib)$
 \usepackage{natbib}
